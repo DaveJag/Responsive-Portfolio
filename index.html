@@ -1,47 +1,125 @@
-<!-- David Jagodowski - This is my attempt at the online profile project. I am submitting this
-in addition to the "Easier" assignment just to demonstrate what I was able to do. 
-I only worked on the main (index.html) page. The About, Portfolio, and Contact links in the header
-are formatted as links... they just don't go anywhere.  -->
+<!-- David Jagodowski HW02 -->
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HW01 - Regular Assignment</title>
+	<title>HW02 - Responsive Design</title>
 	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> This really changes things! Did not implement this -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!-- move the media queries to bottom of .css when done -->
+	<style type="text/css">
+
+	@media only screen and (max-width: 680px) {
+
+	.container {
+		position: relative;
+		width: 640px;
+		min-height: 1300px; 
+		margin: 0px; 
+	}
+
+	header {
+		width: 100%;
+		height: 80px;
+	}
+
+	.navbar {
+		height: 50px;
+		width: 100%;
+		background-color: #ffffff;
+		padding-top: 6px;
+		vertical-align: middle; 
+		color: #4aaaa5;
+		text-align: center;
+		font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+		font-size: 12pt;
+		word-spacing: 6em;
+
+	}
+
+	main {
+		width: 96%;
+		min-height: 1100px;
+		margin: 0 auto;
+	}
+
+	.content {
+		width: 80%; 
+		padding: 5px 20px 15px 20px;
+		background-color: #ffffff;
+		border: 2px solid #dddddd;
+		margin: 0 auto; /* centers content div inside main div */
+	}
+		
+	.sidebar {
+		width: 80%; 
+		height: 160px;
+		padding: 5px 20px 15px 20px;
+		float: none;
+		background-color: #ffffff;
+		border: 2px solid #dddddd;
+		margin: 40px auto; /* centers content div inside main div */
+	}
+	
+	.iconsize {
+		display: inline;
+		height: 60px;
+		width: 60px; 
+	}
+	
+	footer {
+		clear: both;
+		width: 93%;
+		height: 40px;
+		padding-bottom: 12px;
+		text-align: center;
+		border-top: 4px solid #4aaaa5;
+		background-color: #666666;
+		position: fixed;
+			bottom: 0px;
+	}
+
+	.textwrap	{
+		padding-top: 15px;
+		width: 60%;
+		float: none;
+		display: block; /* center image */
+		margin-left: auto;
+		margin-right: auto;
+}
+
+	</style>
 </head>
+
 <body>
 
-<div class="pagewrap">
-
+<div class="container">
 	<header>
-		
-		<p class="navbar"><a href="#" target="_blank">About</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
-		<p class="navbar"><a href="#" target="_blank">Portfolio</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
-		<p class="navbar"><a href="#" target="_blank">Contact</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
-	
-
-		<section class="headname"> <!-- This is the section of the header that contains the name -->
-				<p>Dave Jagodowski</p>
-		</section>
+		<p>David Jagodowski</p>
 	</header>
+
+	<div class="navbar">
+		<p><a href="#" target="_blank">About</a> <a href="#" target="_blank">Portfolio</a> <a href="#" target="_blank">Contact</a> </p>
+	</div>
 		
-	<main>
+	<main class="clear">
 		<section class="content">
 			<h2 class="title">About Me</h2>
 			<hr>
 			<img class="textwrap" src="./assets/images/DJ_profile04.png" alt="Photo of Dave Jagodowski"> 
-			<p>I am a technical writer and content developer with extensive experience documenting software, hardware, and firmware products in the computer and data-storage industry. I am currently studying web development at UNH so I expand my career beyond content creation and improve the way that "documentation" is accessed and delivered by incorporating intelligent design with video support to provide an effective and comprehensive solution.  </p>
+			<p>I am a technical writer and content developer with extensive experience documenting software, hardware, and firmware products in the computer and data-storage industry. I am currently studying web development at UNH so I can expand my career beyond content creation and perhaps improve the way that "documentation" is accessed and delivered in software environments. </p>
 			<p>Beyond my technical career, I am also an adjunct physics professor for several colleges in the Manchester, NH area. I understand that delivering a 3-hr physics lecture after an 8-hr work day may not be everyone's definition of relaxing, but I thoroughly enjoy the interaction with the students and the challenges that the job presents. </p>
 		</section>
 
 		<aside class="sidebar">
-			<h3 class="title">Connect with Me</h2>
+			<h3 class="title">Connect with Me</h3>
 			<hr>
-			<img class="iconsize" src="./assets/images/github_logo.png">
-			<img class="iconsize" src="./assets/images/linkedin_logo.png">
-			<img class="iconsize" src="./assets/images/stackoverflow_logo.png">
-
+			<p>
+				<img class="iconsize" src="./assets/images/github_logo.png">&nbsp;
+				<img class="iconsize" src="./assets/images/linkedin_logo.png">&nbsp;
+				<img class="iconsize" src="./assets/images/stackoverflow_logo.png">
+			</p>
 		</aside>
 	</main>
 
