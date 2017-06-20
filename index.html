@@ -6,17 +6,115 @@
 	<title>HW02 - Responsive Design</title>
 	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> This really changes things! Did not implement this -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 	<!-- move the media queries to bottom of .css when done -->
 	<style type="text/css">
 
-	@media only screen and (max-width: 680px) {
+	@media only screen and (max-width: 800px) and (min-width: 641px) {
+
+	.container {
+		position: relative;
+		width: 768px;
+		min-height: 1100px; 
+		margin: 0px; 
+	}
+
+	header {
+		width: 40%;
+		height: 80px;
+		margin-left: 20px;
+		margin-bottom: 80px;
+		float: left;
+	}
+
+	.navbar {
+		height: 70px;
+		width: 45%;
+		float: left;
+		background-color: #ffffff;
+		padding: 16px 25px 0px 0px;
+		vertical-align: middle; 
+		color: #4aaaa5;
+		text-align: right;
+		font-size: 13pt;
+		word-spacing: 1.5em;
+		clear: right;	
+	}
+
+	main {
+		width: 96%;
+		
+		display: block;
+		min-height: 1000px;
+		margin: 0 auto;
+	}
+
+	.content {
+		float: none;
+		width: 80%; 
+		position: absolute;
+			top: 50px;
+		padding: 5px 20px 15px 20px;
+		background-color: #ffffff;
+		border: 2px solid #dddddd;
+		margin: 0 auto; /* centers content div inside main div */
+	}
+		
+	.sidebar {
+		float: none;
+		width: 80%; 
+		position: absolute;
+			top: 650px;
+		padding: 5px 20px 15px 20px;
+		background-color: #ffffff;
+		border: 2px solid #dddddd;
+		margin: 0 auto; /* centers content div inside main div */
+	}
+	
+	.iconsize {
+		display: inline;
+		height: 60px;
+		width: 60px; 
+	}
+	
+	footer {
+		clear: both;
+		width: 768px;
+		height: 40px;
+		padding-bottom: 12px;
+		text-align: center;
+		border-top: 4px solid #4aaaa5;
+		background-color: #666666;
+		position: fixed;
+			bottom: 0px;
+	}
+
+	.textwrap	{
+		padding-top: 15px;
+		width: 55%;
+		float: left;
+		display: block; /* center image */
+	
+	}
+}
+
+	/* ------------------------------------------------ */
+
+
+
+
+	@media only screen and (max-width: 640px) {
 
 	.container {
 		position: relative;
 		width: 640px;
 		min-height: 1300px; 
 		margin: 0px; 
+	}
+
+	.body {
+		background-image: url("../images/background1.jpg");
 	}
 
 	header {
@@ -32,13 +130,13 @@
 		vertical-align: middle; 
 		color: #4aaaa5;
 		text-align: center;
-		font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
 		font-size: 12pt;
 		word-spacing: 6em;
-
 	}
 
 	main {
+		position: absolute;	
+			top: 140px;
 		width: 96%;
 		min-height: 1100px;
 		margin: 0 auto;
@@ -46,6 +144,8 @@
 
 	.content {
 		width: 80%; 
+		position: absolute;
+			left : 20px;
 		padding: 5px 20px 15px 20px;
 		background-color: #ffffff;
 		border: 2px solid #dddddd;
@@ -54,6 +154,9 @@
 		
 	.sidebar {
 		width: 80%; 
+		position: absolute;
+			left: 20px;
+			top: 750px;
 		height: 160px;
 		padding: 5px 20px 15px 20px;
 		float: none;
@@ -70,7 +173,7 @@
 	
 	footer {
 		clear: both;
-		width: 93%;
+		max-width: 768px;
 		height: 40px;
 		padding-bottom: 12px;
 		text-align: center;
@@ -87,8 +190,8 @@
 		display: block; /* center image */
 		margin-left: auto;
 		margin-right: auto;
+	}
 }
-
 	</style>
 </head>
 
@@ -103,7 +206,7 @@
 		<p><a href="#" target="_blank">About</a> <a href="#" target="_blank">Portfolio</a> <a href="#" target="_blank">Contact</a> </p>
 	</div>
 		
-	<main class="clear">
+	<main>
 		<section class="content">
 			<h2 class="title">About Me</h2>
 			<hr>
