@@ -1,54 +1,47 @@
-<!-- David Jagodowski HW02 -->
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
 <head>
-	<title>HW02 - Responsive Design</title>
-	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> This really changes things! Did not implement this -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/media.css">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About | David Jagodowski</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/media.css"> 
+
 
 </head>
-
 <body>
-
-<div class="container">
-	<header>
-		<p>David Jagodowski</p>
-	</header>
-
-	<div class="navbar">
-		<p><a href="#" target="_blank">About</a> <a href="#" target="_blank">Portfolio</a> <a href="#" target="_blank">Contact</a> </p>
-	</div>
-		
-	<main>
-		<section class="content">
-			<h2 class="title">About Me</h2>
-			<hr>
-			<img class="textwrap" src="./assets/images/DJ_profile04.png" alt="Photo of Dave Jagodowski"> 
-			<p>I am a technical writer and content developer with extensive experience documenting software, hardware, and firmware products in the computer and data-storage industry. I am currently studying web development at UNH so I can expand my career beyond content creation and perhaps improve the way that "documentation" is accessed and delivered in software environments. </p>
-			<p>Beyond my technical career, I am also an adjunct physics professor for several colleges in the Manchester, NH area. I understand that delivering a 3-hr physics lecture after an 8-hr work day may not be everyone's definition of relaxing, but I thoroughly enjoy the interaction with the students and the challenges that the job presents. </p>
-		</section>
-
-		<aside class="sidebar">
-			<h3 class="title">Connect with Me</h3>
-			<hr>
-			<p>
-				<img class="iconsize" src="./assets/images/github_logo.png">&nbsp;
-				<img class="iconsize" src="./assets/images/linkedin_logo.png">&nbsp;
-				<img class="iconsize" src="./assets/images/stackoverflow_logo.png">
-			</p>
-		</aside>
-	</main>
-
-	<footer>
-		<p class="footertext">Copyright 2017 - David Jagodowski</p>
-	</footer>
-
-</div>
-
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">David Jagodowski</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
+      <img src="assets/images/DJ_profile04_600px.png" class="auth-image" alt="Photo of David Jagodowski">
+      <p>I am a technical writer and content developer with extensive experience documenting software, hardware, and firmware products in the computer and data-storage industry. I am currently studying web development at UNH so I can expand my career beyond content creation and perhaps improve the way that "documentation" is accessed and delivered in software environments. </p>
+      <p>Beyond my technical career, I am also an adjunct physics professor for several colleges in the Manchester, NH area. I understand that delivering a 3-hr physics lecture after an 8-hr work day may not be everyone's definition of relaxing, but I thoroughly enjoy the interaction with the students and the challenges that the job presents. </p>
+    </section>
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+        <a href="#"><img src="assets/images/github_logo.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin_logo.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow_logo.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 David Jagodowski
+    </div>
+  </footer>
 </body>
 </html>
